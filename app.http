@@ -1,0 +1,29 @@
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "adam_richar",
+  "name": "Adam Richard",
+  "password": "rich",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+###
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+###
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard@123",
+  "newPassword": "richard_567"
+}
